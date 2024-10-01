@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- saved from url=(0109)https://moodle.leo-statz-berufskolleg.de/pluginfile.php/487955/mod_resource/content/0/vorlage_rente.htnl.html -->
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nachschüssiger Rentenrechner</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: right;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nachschüssiger Rentenrechner</h1>
+
+    <label for="rente">Jährliche Rente:</label>
+    <input type="number" id="rente" value="500"><br><br>
+
+    <label for="zins">Jährlicher Zinssatz (%):</label>
+    <input type="number" id="zins" value="2"><br><br>
+
+    <label for="laufzeit">Laufzeit (Jahre):</label>
+    <input type="number" id="laufzeit" value="5"><br><br>
+
+    <button onclick="berechneRente()">Berechnen</button>
+
+    <div id="ausgabe"></div>
+
+    <script>
+        function berechneRente() {
+
+            var J = 1;
+            var Rj = 0;
+            var r ;
+            var Zj;
+            var Rplus1 = 0;
+            var laufzeit = parseInt(document.getElementById("laufzeit").value);
+            var Zins = parseFloat(document.getElementById("zins").value);
+            var Rente  = parseFloat(document.getElementById("rente").value);
+            var ausgabe = "";
+
+            var ausgabe = ausgabe +'<table><thead><tr><th>Jahr</th><th>RJ</th><th>Zj</th><th>r</th><th>Rj+1</th></tr></thead><tbody>';
+
+        
+           while(J <= laufzeit) {
+              
+              
+            Rj = Rente + Rplus1;
+            Zj =   Rj * (Zins / 100);
+            r = Rente;
+            Rplus1 = Rj + Zj;
+              
+
+            ausgabe = ausgabe + "<tr><td>" + J + "</td><td>" + Rj.toFixed(2) + "</td><td>" + Zj.toFixed(2) + "</td><td>" + r + "</td><td>"+ Rplus1.toFixed(2) + "</td></tr>";
+            J++;
+                
+            } 
+			
+			
+			
+
+            ausgabe += '</tbody></table>';
+            document.getElementById('ausgabe').innerHTML = ausgabe;
+          }
+    </script>
+
+
+</body></html>

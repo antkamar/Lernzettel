@@ -1,0 +1,176 @@
+/* Grundlegende Reset-Regeln */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Gesamtstruktur */
+body {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Header */
+.header {
+    display: flex;
+    height: 70px;
+    background-color:#004080;
+    color: white;
+    justify-content: center;
+    align-items: center;
+   }
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #0066cc;
+    grid-gap: 20px;
+    
+    
+}
+
+.navbar a {
+    color: white;
+    
+}
+
+.navbar a:hover {
+    
+    height: 30px;
+    font-size: 25px;
+}
+
+/* Hauptbereich mit Grid */
+.main-content {
+    
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+
+   
+   
+}
+
+/* Video-Bereich */
+.video-section {
+    padding-left: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    padding-right: 15px;
+    padding-bottom: 60px;
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    width: 650px;
+}
+
+/* Neuer Bereich: Podcasts */
+.podcast-section {
+    
+    background-color:#e6f7ff;
+    
+    border-radius: 7px;
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-top: 30px;
+    width: auto;
+    width: ;
+	
+}
+
+.podcast-section ul {
+    list-style-type: none;
+}
+
+.podcast-section li {
+    margin-bottom: 10px;
+}
+
+.podcast-section a {
+    
+}
+
+.podcast-section a:hover {
+    text-decoration: underline;
+}
+
+/* Artikel-Bereich */
+.article-section {
+box-shadow:10px 10px 20px rgb(110, 108, 108);
+height: 200px;
+    padding-left: 10px;
+
+   margin-left: 15px;
+   margin-bottom: 15px;
+    border-radius: 7px;
+    background-color: #fcf9f9;
+    
+}
+
+.abo-selection {
+    background-color: rgb(177, 173, 173);
+    border-color: #e6f7ff;
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    border-radius: 7px;
+    margin-right: 15px;
+   
+    height: 80px;
+    
+    
+    
+
+
+}
+
+
+.kontakt-selection{
+
+    box-shadow:10px 10px 20px rgb(73, 72, 72);
+height: 300px;
+    padding-left: 10px;
+
+   margin-left: 15px;
+   margin-bottom: 15px;
+    border-radius: 7px;
+    background-color: #999292;
+
+
+}
+
+.info{
+    width: 400px;
+    height: 20px;
+}
+
+.info2{
+    width: 400px;
+    height: 25px;
+}
+
+.schrift{
+    font-size: 20px;
+}
+
+.knopf{
+    background-color: #0066cc;
+    color: white;
+    height: 30px;
+    width: 400px;
+    border-radius: 7px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    background-color:#004080;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+
+}
+
+    

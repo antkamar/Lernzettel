@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kleine Webseite mit Podcast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Mein Lernzettel</h1>
+    </header>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Über uns</a>
+        <a href="#">Artikel</a>
+        <a href="#">Kontakt</a>
+    </nav>
+    <main class="main-content">
+        <section class="video-section">
+            <h2>Unser Video</h2>
+            <video controls width="100%">
+                <source src="video.mp4" type="video/mp4">
+                Dein Browser unterstützt dieses Videoformat nicht.
+            </video>
+        </section>
+        
+        <!-- Neuer Bereich: Podcasts -->
+        <section class="podcast-section">
+            <h2>Unsere Podcasts</h2>
+            <ul>
+                <li><a href="./Druckvergleich/index.html">Druckervergleich</a></li>
+                <li><a href="./Renten rechner/Nachschüssiger Rentenrechner.html">Rentenrechner</a></li>
+                <li><a href="./Fibonacci/Fibonacci.html">Fibonacci</a></li>
+                <li><a href="./Druckvergleich2.0/index.html">DruckervergleichEXT</a></li>
+            </ul>
+        </section>
+
+        <article class="article-section">
+            <h2>Ein spannender Artikel</h2>
+            <p>Dieser Artikel behandelt ein sehr interessantes Thema und bietet viele wertvolle Informationen.</p>
+            <p>Lesen Sie weiter, um mehr über dieses spannende Thema zu erfahren.</p>
+        </article>
+        <Abo class="abo-selection">
+            <p>Abonniere unseren Newsletter.</p>
+            <input id="name" placeholder="Deine E-mail Adresse" required>
+            <button type="submit">Abonnieren</button>
+
+
+
+        </Abo>
+
+        <kontakt class="kontakt-selection">
+            <h2>Kontaktieren sie uns</h2>
+            <br></br>
+            <p class="schrift">Name:</p>
+            <input class="info" id="name" placeholder="" required>
+                <p class="schrift">E-Mail:</p>
+                <input class="info" id="name" placeholder="" required>
+            <p class="schrift">Nachricht:</p>
+            <input class="info2" id="name" placeholder="" required>
+            <br></br>
+            <button class="knopf"  type="submit">Absenden</button>
+            
+
+
+            
+        </kontakt>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Meine Webseite</p>
+    </footer>
+</body>
+</html>
